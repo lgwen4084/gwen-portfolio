@@ -129,21 +129,17 @@ header {
 
 .hero {
   display: flex;
-  align-items: center; 
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  padding: 60px 5%;
-  min-height: 100vh; 
-  background-color: #e0e0e0;
-  overflow: hidden;
+  gap: 40px;
+  position: relative;
 }
 
+
 .hero-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  padding-right: 40px;
+  max-width: 600px;
+  z-index: 1;
 }
 
 .hero-content h1 {
