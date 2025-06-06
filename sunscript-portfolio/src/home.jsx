@@ -8,80 +8,144 @@ const Home = () => {
     <>
     <Header />
     <main>
-          <div className="hero">
-            <div className="hero-content">
-              <h1>Hello!</h1>
-              <h3>
-                I'm <span className="highlight">Sunscript</span>
-              </h3>
-              <p>
-                I’m a software engineer with a passion for turning creative ideas into smart,<br />
-                user-friendly digital experiences. I blend technical skill with an eye for design,<br />
-                building websites and apps and systems that don’t just function—they delight.
-              </p>
-              <div className="hero-buttons">
-                <a href="#projects" className="btn-primary">View Projects</a>
-                <a href="resume.pdf" className="btn-secondary" download>Download Resume</a>
-              </div>
-              <div className="social-icons">
-                <a href="https://instagram.com" aria-label="Instagram">
-                  <img src="/images/instagram.png" alt="Instagram" />
-                </a>
-                <a href="https://facebook.com" aria-label="Facebook">
-                  <img src="/images/facebook.png" alt="Facebook" />
-                </a>
-                <a href="https://twitter.com" aria-label="Twitter">
-                  <img src="/images/twitter.png" alt="Twitter" />
-                </a>
-                <a href="https://pinterest.com" aria-label="Pinterest">
-                  <img src="/images/pinterest.png" alt="Pinterest" />
-                </a>
-                <a href="https://linkedin.com" aria-label="LinkedIn">
-                  <img src="/images/linkedin.png" alt="LinkedIn" />
-                </a>
-              </div>
+    {/* Hero Section */}
+    <motion.div
+        className="hero"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="hero-content">
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+          >
+            Hello!
+          </motion.h1>
+
+          <motion.h3
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            I'm <span className="highlight">Sunscript</span>
+          </motion.h3>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.7 }}
+          >
+            I’m a software engineer with a passion for turning creative ideas into smart,<br />
+            user-friendly digital experiences. I blend technical skill with an eye for design,<br />
+            building websites and apps and systems that don’t just function—they delight.
+          </motion.p>
+
+          <motion.div
+            className="hero-buttons"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9 }}
+          >
+            <a href="#projects" className="btn-primary">View Projects</a>
+            <a href="resume.pdf" className="btn-secondary" download>Download Resume</a>
+          </motion.div>
+
+          <motion.div
+            className="social-icons"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.1 }}
+          >
+            <a href="https://instagram.com" aria-label="Instagram">
+              <img src="/images/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://facebook.com" aria-label="Facebook">
+              <img src="/images/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter">
+              <img src="/images/twitter.png" alt="Twitter" />
+            </a>
+            <a href="https://pinterest.com" aria-label="Pinterest">
+              <img src="/images/pinterest.png" alt="Pinterest" />
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn">
+              <img src="/images/linkedin.png" alt="LinkedIn" />
+            </a>
+          </motion.div>
+        </div>
+
+        <motion.div
+          className="sun-shape"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="sun-core"></div>
+        </motion.div>
+      </motion.div>
+
+      {/* Skills Section */}
+      <motion.section
+        id="skills"
+        className="skills-section"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2.2 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <div className="skills-left">
+          <motion.h2
+            initial={{ x: -30, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            Check My Skills And<br />Using Source
+          </motion.h2>
+
+          <div className="skills-icons">
+            <div className="skills-row">
+              <img src="images/figma.svg" alt="Figma" />
+              <img src="images/ps.svg" alt="Photoshop" />
+              <img src="images/python.svg" alt="Python" />
+              <img src="images/html.svg" alt="HTML" />
+              <img src="images/c_plus.png" alt="C++" />
             </div>
-            <motion.div className="sun-shape" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8 }}>
-              <div className="sun-core"></div>
-            </motion.div>
-          </div>
-
-    {/* Skills Section */}
-
-    <section id="skills" class="skills-section">
-      <div class="skills-left">
-        <h2>Check My Skills And<br />Using Source</h2>
-        <div class="skills-icons">
-          <div class="skills-row">
-            <img src="images/figma.svg" alt="Figma" />
-            <img src="images/ps.svg" alt="Photoshop" />
-            <img src="images/python.svg" alt="Python" />
-            <img src="images/html.svg" alt="HTML" />
-            <img src="images/c_plus.png" alt="C++" />
-          </div>
-          <div class="skills-row-2">
-            <img src="images/jsx.svg" alt="JSX" />
-            <img src="images/php.svg" alt="PHP" />
-            <img src="images/css.svg" alt="CSS" />
-            <img src="images/react.svg" alt="React" />
-            <img src="images/vue.svg" alt="Vue" />
+            <div className="skills-row-2">
+              <img src="images/jsx.svg" alt="JSX" />
+              <img src="images/php.svg" alt="PHP" />
+              <img src="images/css.svg" alt="CSS" />
+              <img src="images/react.svg" alt="React" />
+              <img src="images/vue.svg" alt="Vue" />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="skills-right">
-        <h3>We Believe That<br />Good Design Changes<br />The World</h3>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page looking at its layout.</p>
-        <a href="services.html" class="read-more-btn">Read More</a>
-      </div>
-    </section>
 
+        <motion.div
+          className="skills-right"
+          initial={{ x: 30, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          <h3>
+            We Believe That<br />Good Design Changes<br />The World
+          </h3>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page looking at its layout.
+          </p>
+          <a href="services.html" className="read-more-btn">Read More</a>
+        </motion.div>
+      </motion.section>
     {/* Projects Section */}
+
+  
     <section id="projects" class="projects-section">
       <h2>Take A Look At My Recent Projects</h2>
       <div class="project-grid">
         <div class="project-card">
           <div class="project-image" role="img" aria-label="Become Solid Project Preview">
-            <img src="./images/example.png" alt="example" />
+            <img src="./images/example.png" alt="" />
           </div>
           <h3>Become Solid</h3>
         </div>
@@ -212,6 +276,38 @@ const Home = () => {
     <section class="get-in-touch get-in-touch-hero">
       <div class="hero-overlay">
         <div class="content">
+          <style jsx>{`
+            .get-in-touch {
+              background: url('images/get-in-touch-bg.jpg') no-repeat center center/cover;
+              color: #fff;
+              padding: 50px 20px;
+              text-align: center;
+            }
+
+            .get-in-touch h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: var(--heading-font-2);
+  font-weight: 400;
+  animation: pulse 30s infinite ease-in-out;
+  -webkit-animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+          `}</style>
           <h2>Get In Touch With Me</h2>
           <p>
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.

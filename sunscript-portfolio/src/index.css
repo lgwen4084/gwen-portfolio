@@ -157,6 +157,8 @@ header {
   margin-top: 20px;
   line-height: 1.6;
   font-family: var(--text-font);
+  height: 10rem;
+  width: 26.25rem;
 }
 
 .hero-buttons {
@@ -406,6 +408,7 @@ header {
   object-fit: cover;
   display: block;
   border-radius: 12px;
+  box-shadow: 0 8px 25pxrgba(0,0,0,0.08);
 }
 
 .project-card h3 {
@@ -437,6 +440,11 @@ header {
   margin-left: 100px;
   margin-top: 80px;
   margin-bottom: 90px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.services-section h2:hover {
+  color: var(--thirdary-color);
+  border-color: var(--thirdary-color);
 }
 
 .services-layout {
@@ -781,6 +789,7 @@ header {
   border: none;
   width: 60%;
   max-width: 300px;
+  margin-left: 20px;
 }
 
 .get-in-touch-hero .newsletter-form button {
@@ -794,12 +803,13 @@ header {
   transition: background-color 0.3s ease;
 }
 
-
 .get-in-touch h2 {
   font-size: 50px;
   margin-bottom: 20px;
   font-family: var(--heading-font-2);
   font-weight: 400;
+  animation: pulse 0.8s infinite ease-in-out;
+  -webkit-animation: pulse 0.8s infinite ease-in-out;
 }
 
 .get-in-touch-hero .newsletter-form button:hover {
