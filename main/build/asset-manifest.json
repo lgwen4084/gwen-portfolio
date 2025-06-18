@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sunscript/static/css/main.17e30f72.css",
+    "main.js": "/sunscript/static/js/main.9fef2a62.js",
+    "static/media/Slider.png": "/sunscript/static/media/Slider.d97e6ba56d40583c7184.png",
+    "static/media/get-in-touch-bg.png": "/sunscript/static/media/get-in-touch-bg.a0664236942b5254a187.png",
+    "index.html": "/sunscript/index.html",
+    "main.17e30f72.css.map": "/sunscript/static/css/main.17e30f72.css.map",
+    "main.9fef2a62.js.map": "/sunscript/static/js/main.9fef2a62.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17e30f72.css",
+    "static/js/main.9fef2a62.js"
+  ]
+}
