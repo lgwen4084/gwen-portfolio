@@ -153,7 +153,7 @@ const Home = () => {
               <div className="project-image" role="img" aria-label="Solare Skateball Project Preview">
                 <img src="/images/example2.png" alt="" />
               </div>
-              <h3>Solare Skateball</h3>
+              <h3>Solase Pickleball</h3>
             </div>
             <div className="project-card">
               <div className="project-image" role="img" aria-label="Devos Outdoors Project Preview">
@@ -166,13 +166,13 @@ const Home = () => {
               <div className="project-image" role="img" aria-label="Odr Shis Project Preview">
                 <img src="/images/example4.png" alt=""/>
               </div>
-              <h3>Odr Shis</h3>
+              <h3>Odr Skis</h3>
             </div>
             <div className="project-card">
               <div className="project-image" role="img" aria-label="Tide Ocean Project Preview">
                 <img src="/images/example5.webp" alt="" />
               </div>
-              <h3>Tide Ocean</h3>
+              <h3>Tidey Ocean</h3>
             </div>
             <div className="project-card">
               <div className="project-image" role="img" aria-label="Barbell Apparel Project Preview">
