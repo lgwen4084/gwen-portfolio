@@ -54,23 +54,24 @@ const Projects = () => {
     <section class="mission-section">
       <h2>My Mission</h2>
       <p>
-        To build inclusive, meaningful software that solves real-world problems and helps people live better, more connected lives.
+      My mission is to empower small and medium-sized businesses with dynamic web and app experiences—seamless transitions,
+      intuitive design, and rock-solid performance; so they can engage users and drive real growth.
       </p>
       <div class="values-list">
-        <div class="value-item">
-          <h3>Creativity</h3>
-          <p>Turning ideas into sleek, interactive interfaces and bold designs.</p>
-        </div>
-        <div class="value-item">
-          <h3>Precision</h3>
-          <p>Code that’s clean, scalable, and engineered for long-term use.</p>
-        </div>
-        <div class="value-item">
-          <h3>Growth</h3>
-          <p>Constantly learning, exploring new tech, and evolving my craft.</p>
-        </div>
-      </div>
-    </section>
+    <div class="value-item">
+      <h3>Scalability</h3>
+      <p>Architecting front-end and back-end components that grow seamlessly under load.</p>
+    </div>
+    <div class="value-item">
+      <h3>Security</h3>
+      <p>Enforcing secure coding, encrypted data flows, and robust authentication methods.</p>
+    </div>
+    <div class="value-item">
+      <h3>Automation</h3>
+      <p>Streamlining builds, deployments, and testing with CI/CD pipelines and Infrastructure as Code.</p>
+    </div>
+  </div>
+</section>
 
     {/* Technologies Section */}
     <section class="skills-section">
@@ -96,15 +97,14 @@ const Projects = () => {
       <div class="skills-right">
         <h3>Engineering Meets Design</h3>
         <p>
-          With a unique background in acoustics and software, I approach projects holistically—balancing usability, performance, and design fidelity.
-        </p>
+          With a foundation in interface design and server logic, I strike the right balance between form, function, and efficiency.        </p>
       </div>
     </section>
 
     {/* Contact Section */}
     <section class="contact-section">
       <h2>Want to Work Together?</h2>
-      <p class="contact-email">sunscript@mail.com</p>
+      <p class="contact-email">sunscript@gmail.com</p>
       <a href="contact.html" class="btn-secondary">Let's Talk</a>
     </section>
   </main>
