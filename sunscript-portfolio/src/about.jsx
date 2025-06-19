@@ -33,16 +33,19 @@ const Projects = () => {
           <img src="images/about-me.jpeg" alt="Sunscript" class="about-img" />
         </div>
         <div class="about-right">
-          <h2>Who I Am</h2>
-          <p>
-            I’m Gwen, the developer behind Sunscript. My journey into tech started through acoustical engineering, where I learned the power of precision and analysis. Later, I transitioned into full-stack development, blending creativity and problem-solving into digital products.
-          </p>
-          <p>
-            I bring two years of experience building responsive, accessible, and modern interfaces for the web, alongside back-end logic and API integration. I'm passionate about both front-end aesthetics and robust software architecture.
-          </p>
-          <p>
-            Whether it's developing a custom CMS, designing data pipelines, or building engaging user experiences, I deliver clean code and thoughtful design.
-          </p>
+        <h2>Who I Am</h2>
+        <p> I’m Gwen, the developer behind Sunscript, with roots as a front-end engineer and two years of full-stack experience.
+          I specialize in crafting responsive web interfaces and reliable back-end systems, blending intuitive design with solid architecture.
+          Whether it’s a custom CMS, API-driven app, or data pipeline, I deliver clean code and seamless user experiences for small and medium-sized businesses. </p>
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </section>
