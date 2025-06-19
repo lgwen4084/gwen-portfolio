@@ -30,7 +30,7 @@ const Home = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              I'm <span className="highlight">Sunscript</span>
+              I'm <span className="highlight">Gwen Le</span>
             </motion.h3>
 
             <motion.p
@@ -38,9 +38,13 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
-              I’m a software engineer with a passion for turning creative ideas into smart,<br />
-              user-friendly digital experiences. I blend technical skill with an eye for design,<br />
-              building websites and apps and systems that don’t just function—they delight.
+
+              I’m a software engineer who bridges design and development,
+              crafting responsive web apps and scalable back-end services.
+              I specialize in clean, component-driven code and intuitive interfaces that solve real user needs.
+              From dynamic UIs to robust APIs, I build systems that perform flawlessly and feel effortless.
+
+
             </motion.p>
 
             <motion.div
@@ -133,54 +137,125 @@ const Home = () => {
               We Believe That<br />Good Design Changes<br />The World
             </h3>
             <p>
-              It is a long established fact that a reader will be distracted by the readable content of a page looking at its layout.
+            Grounded in atomic design and component-driven architecture, we leverage semantic HTML, CSS variables, ARIA roles, and optimized build pipelines to deliver accessible, high-performance interfaces at scale.
             </p>
             <a href="services.html" className="read-more-btn">Read More</a>
           </motion.div>
         </motion.section>
 
-        {/* Projects Section */}
-        <section id="projects" className="projects-section">
-          <h2>Take A Look At My Recent Projects</h2>
-          <div className="project-grid">
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Become Solid Project Preview">
-                <img src="/images/example.png" alt="" />
-              </div>
-              <h3>Become Solid</h3>
-            </div>
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Solare Skateball Project Preview">
-                <img src="/images/example2.png" alt="" />
-              </div>
-              <h3>Solase Pickleball</h3>
-            </div>
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Devos Outdoors Project Preview">
-                <img src="/images/example3.png" alt=""/>
-              </div>
-              <h3>Devos Outdoors</h3>
+{/* Projects Section */}
+          <section id="projects" className="projects-section">
+            <h2>Take A Look At My Recent Projects</h2>
+            <div className="project-grid">
+              <a
+                href="https://becomesolid.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Become Solid (opens in new tab)"
+              >
+                <div className="project-card">
+                  <div
+                    className="project-image"
+                    role="img"
+                    aria-label="Become Solid Project Preview"
+                  >
+                    <img src="/images/example.png" alt="" />
+                  </div>
+                  <h3>Become Solid</h3>
+                </div>
+              </a>
+
+              <a
+                href="https://solasepickleball.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Solase Pickleball (opens in new tab)"
+              >
+                <div className="project-card">
+                  <div
+                    className="project-image"
+                    role="img"
+                    aria-label="Solase Pickleball Project Preview"
+                  >
+                    <img src="/images/example2.png" alt="" />
+                  </div>
+                  <h3>Solase Pickleball</h3>
+                </div>
+              </a>
+
+              <a
+                href="https://www.devosoutdoor.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Devos Outdoors (opens in new tab)"
+              >
+                <div className="project-card">
+                  <div
+                    className="project-image"
+                    role="img"
+                    aria-label="Devos Outdoors Project Preview"
+                  >
+                    <img src="/images/example3.png" alt="" />
+                  </div>
+                  <h3>Devos Outdoors</h3>
+                </div>
+              </a>
+
+              <a
+                href="https://odrskis.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ODR Skis (opens in new tab)"
+              >
+                <div className="project-card">
+                  <div
+                    className="project-image"
+                    role="img"
+                    aria-label="ODR Skis Project Preview"
+                  >
+                    <img src="/images/example4.png" alt="" />
+                  </div>
+                  <h3>ODR Skis</h3>
+                </div>
+              </a>
+
+              <a
+                href="https://theoceancleanup.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="The Ocean Cleanup (opens in new tab)"
+              >
+                <div className="project-card">
+                  <div
+                    className="project-image"
+                    role="img"
+                    aria-label="The Ocean Cleanup Project Preview"
+                  >
+                    <img src="/images/example5.webp" alt="" />
+                  </div>
+                  <h3>The Ocean Cleanup</h3>
+                </div>
+              </a>
+
+              <a
+                href="https://barbellapparel.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Barbell Apparel (opens in new tab)"
+              >
+                <div className="project-card">
+                  <div
+                    className="project-image"
+                    role="img"
+                    aria-label="Barbell Apparel Project Preview"
+                  >
+                    <img src="/images/example6.png" alt="" />
+                  </div>
+                  <h3>Barbell Apparel</h3>
+                </div>
+              </a>
             </div>
 
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Odr Shis Project Preview">
-                <img src="/images/example4.png" alt=""/>
-              </div>
-              <h3>Odr Skis</h3>
-            </div>
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Tide Ocean Project Preview">
-                <img src="/images/example5.webp" alt="" />
-              </div>
-              <h3>Tidey Ocean</h3>
-            </div>
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Barbell Apparel Project Preview">
-                <img src="/images/example6.png" alt="" />
-              </div>
-              <h3>Barbell Apparel</h3>
-            </div>
-          </div>
           <a href="#projects" className="btn-primary">View All Works</a>
         </section>
 
@@ -217,9 +292,11 @@ const Home = () => {
             </div>
             <div className="about-right">
               <p>
-                Software Engineer with 2 years of experience in full-stack web development and embedded software.
-                Graduated in Acoustical Engineering, with a solid foundation in logic and problem-solving. In addition to professional courses, I am currently pursuing a degree in Computer Science.
-                I love learning new things and am passionate about technology and creative solutions to solve real-world problems.
+              I’m a software engineer who blends two years of full-stack web and embedded software experience with an acoustical engineering mindset.
+              I craft applications like compositions, tuning backend reliability, fine-tuning frontend harmonics, and debugging rhythms until everything hums.
+              I’m currently deepening my toolkit with a Computer Science degree and targeted certifications;
+              I thrive on exploring emerging tech and building solutions that hit all the right notes.
+
               </p>
             </div>
           </div>
